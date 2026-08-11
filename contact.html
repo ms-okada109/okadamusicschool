@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お問い合わせ・体験レッスン申込み｜岡田音楽教室</title>
+<meta name="description" content="岡田音楽教室への体験レッスンお申込み・お問い合わせはこちらから。兵庫県芦屋市・神戸市西区。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="visually-hidden" href="#main">本文へスキップ</a>
+
+<header class="site-nav" id="siteNav">
+  <a href="index.html" class="brand">岡田音楽教室<small>Okada Music School</small></a>
+  <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html#greeting">教室について</a></li>
+      <li><a href="courses.html">コース案内</a></li>
+      <li><a href="profile.html">講師紹介</a></li>
+      <li><a href="index.html#locations">アクセス</a></li>
+      <li><a href="blog/index.html">ブログ</a></li>
+      <li><a href="contact.html" class="nav-cta">体験レッスン申込み</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Contact</span>
+      <h1>お問い合わせ・体験レッスン申込み</h1>
+      <p class="breadcrumb"><a href="index.html">ホーム</a> ／ お問い合わせ</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-wrap">
+
+      <div class="contact-info reveal">
+        <span class="eyebrow">体験レッスンについて</span>
+        <h3>30分 2,000円<br>（お一人様初回のみ）</h3>
+        <p style="color:var(--ink-soft);">下記フォームにてお気軽にお申込みください。ご質問だけでも歓迎です。折り返しこちらよりご連絡いたします。</p>
+        <ul>
+          <li><strong>神戸市西区教室</strong>明石駅からバス15分／西神中央駅からバス10分／第二神明道路 玉津インター下車</li>
+          <li><strong>芦屋教室</strong>阪急芦屋川駅から徒歩2分／JR芦屋駅から徒歩10分</li>
+          <li><strong>レッスン日</strong>平日・土曜日 21時まで（日曜日は不定期）</li>
+        </ul>
+        <p class="price-note">※詳細住所は体験レッスンお申込み時にお伝えいたします。<br>※メールでのご連絡は @okada-piano.com ドメインからお送りしますので、受信設定をお願いいたします。</p>
+      </div>
+
+      <div class="reveal">
+        <!--
+          ===================================================================
+          フォームの送信先について（サイト管理者向けメモ）
+          -------------------------------------------------------------------
+          このフォームは見た目と入力チェックのみを用意した状態です。
+          実際にメールで受信できるようにするには、以下のいずれかの方法で
+          action="https://formsubmit.co/YOUR-FORM-ENDPOINT" の部分を
+          置き換えてください。
+
+          方法A：formsubmit.co を使う（無料・登録不要）
+            action="https://formsubmit.co/あなたの受信用メールアドレス"
+            → 初回送信時に確認メールが届くので、そのリンクをクリックして
+               有効化してください。
+
+          方法B：Formspree（https://formspree.io）を使う
+            アカウント作成後に発行されるフォームIDを使って
+            action="https://formspree.io/f/xxxxxxx" に置き換えてください。
+
+          方法C：ご自身のサーバー／WordPress等で受信する
+            action="/your-server-endpoint" のように、送信を処理する
+            エンドポイントに置き換えてください。
+          ===================================================================
+        -->
+        <form id="contact-form" action="https://formsubmit.co/YOUR-FORM-ENDPOINT" method="POST">
+          <input type="hidden" name="_subject" value="【岡田音楽教室】体験レッスン・お問い合わせ">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">生徒様のお名前 <span class="req">必須</span></label>
+              <input type="text" id="name" name="生徒様のお名前" required>
+            </div>
+            <div class="field">
+              <label for="kana">お名前フリガナ <span class="req">必須</span></label>
+              <input type="text" id="kana" name="お名前フリガナ" required>
+            </div>
+            <div class="field">
+              <label for="age">ご年齢（学年） <span class="req">必須</span></label>
+              <input type="text" id="age" name="ご年齢（学年）" required placeholder="例：5歳（年中）">
+            </div>
+            <fieldset class="field">
+              <legend>性別 <span class="req">必須</span></legend>
+              <div class="radio-row">
+                <label><input type="radio" name="性別" value="女性" required> 女性</label>
+                <label><input type="radio" name="性別" value="男性"> 男性</label>
+              </div>
+            </fieldset>
+            <div class="field">
+              <label for="guardian">保護者様のお名前（小さなお子様の場合）</label>
+              <input type="text" id="guardian" name="保護者様のお名前">
+            </div>
+            <div class="field">
+              <label for="guardian-kana">保護者様のお名前フリガナ</label>
+              <input type="text" id="guardian-kana" name="保護者様のお名前フリガナ">
+            </div>
+            <div class="field full">
+              <label for="address">ご住所 <span class="req">必須</span></label>
+              <input type="text" id="address" name="ご住所" required>
+            </div>
+            <div class="field">
+              <label for="tel">お電話番号 <span class="req">必須</span></label>
+              <input type="tel" id="tel" name="お電話番号" required>
+            </div>
+            <div class="field">
+              <label for="email">メールアドレス <span class="req">必須</span></label>
+              <input type="email" id="email" name="メールアドレス" required>
+            </div>
+            <div class="field full">
+              <label for="course">ご希望コース <span class="req">必須</span></label>
+              <select id="course" name="ご希望コース" required>
+                <option value="">— 以下から選択してください —</option>
+                <option>ピアノ：レギュラー（導入）</option>
+                <option>ピアノ：レギュラー（初級以上）</option>
+                <option>ピアノ：レギュラー（コンクール参加・受験）</option>
+                <option>ピアノ：ワンレッスン</option>
+                <option>ピアノ：ソルフェージュ</option>
+                <option>リトミック：0〜1歳児</option>
+                <option>リトミック：2歳児</option>
+                <option>リトミック：3歳児</option>
+                <option>声楽コース</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="message">ご質問・ご希望・メッセージなどをどうぞ</label>
+              <textarea id="message" name="メッセージ" rows="5"></textarea>
+            </div>
+          </div>
+
+          <p class="form-note">※予め @okada-piano.com ドメインからのメール受信が可能な設定にしていただきますようお願いいたします。</p>
+          <div class="form-foot">
+            <button type="submit" class="btn btn-solid">この内容で送信する</button>
+            <p class="form-feedback form-note" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand">岡田音楽教室<small>Okada Music School</small></a>
+        <p>兵庫県芦屋市と神戸市西区のピアノ教室。「生徒の持つ個性を最大限に引き出すこと」をモットーに、幼児から音大受験生まで一人ひとりに向き合って指導します。</p>
+        <div class="foot-social">
+          <a href="#" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a href="tel:" aria-label="お電話">TEL</a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>教室案内</h4>
+        <ul>
+          <li><a href="index.html#greeting">教室理念・方針</a></li>
+          <li><a href="profile.html">講師プロフィール</a></li>
+          <li><a href="courses.html">コース・料金</a></li>
+          <li><a href="index.html#locations">レッスン場所</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>コース</h4>
+        <ul>
+          <li><a href="courses.html#piano">ピアノコース</a></li>
+          <li><a href="courses.html#eurhythmics">リトミックコース</a></li>
+          <li><a href="courses.html#voice">声楽コース</a></li>
+          <li><a href="contact.html">体験レッスン申込み</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>その他</h4>
+        <ul>
+          <li><a href="blog/index.html">ブログ</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Copyright© 岡田音楽教室 All Rights Reserved.</span>
+      <span>兵庫県芦屋市 ／ 神戸市西区</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
